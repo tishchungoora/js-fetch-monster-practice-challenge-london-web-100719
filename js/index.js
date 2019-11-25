@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // global variables
     const monsterContainer = document.querySelector("#monster-container");
+    const form = document.querySelector(".add-monster-form");
 
     // fetch monsters promise
     function getMonsters() {
@@ -58,7 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // listen for click event on form submission
-    const form = document.querySelector(".add-monster-form");
     form.addEventListener("submit", function(event) {
         event.preventDefault();
         createMonster(event.target);
